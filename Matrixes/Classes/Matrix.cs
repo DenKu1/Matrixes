@@ -133,8 +133,8 @@ namespace Matrixes.Classes
 
             if (m1.n != m2.m)
             {
-                throw new Exception("Number of columns in the first matrix is ​​not equal" +
-                    " to the number of rows in the second matrix!");
+                throw new MatrixInvalidMultiplyException("Number of columns in the first matrix is ​​not equal" +
+                    " to the number of rows in the second matrix!!");
             }
 
             Matrix result = new Matrix(m1.m, m2.n);
